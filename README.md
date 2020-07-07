@@ -11,7 +11,7 @@ Para os testes foi utilizada a biblioteca pytest, que faz testes unitários e de
 
 O sistema possui recuperação de senha. Caso queira ativá-lo, inserir os dados corretos no \"environment\".O sistema foi desenvolvido com base no SES da AWS com emails reais dentro e fora da sandbox.
 
-# O sistema contempla
+# O sistema abrange
 - Perfilamento simples
 - Login
 - Recuperação de senha
@@ -41,8 +41,8 @@ O admin é responsável por:
 - editar pedidos
 - excluir pedidos
 
-## Usuário comum
-O usuário comum é responsável por:
+## Usuário
+O usuário é responsável por:
 - visualizar produtos
 - visualizar os próprios pedidos
 - cadastrar pedidos
@@ -61,8 +61,7 @@ Para instalar a Virtual Env:
 > virtualenv nome-da-virtualenv
 
 Para ativar a Virtual Env:
-> pastaraiz/venv/Scripts
-> activate (dentro da pasta Scripts)
+> activate (dentro da pasta venv/Scripts)
 
 Para instalar as dependências, use:
 > pip install -r requirements.txt
@@ -70,18 +69,18 @@ Para instalar as dependências, use:
 Lembre-se de atualizar o environment com as credenciais de sua preferência
 
 
-## Run
-Para rodar o sistema, use:
+## Execução
+Para executar o sistema, use:
 > flask run
 
-ou caso queira:
+ou:
 > python application.py
 
 Após rodar o sistema, faça uma requisição para qualquer URL, isso preenche a base de dados.
 Na primeira requisição, as tabelas serão criadas automaticamente junto com as seeds de banco para inicializar o projeto.
 
 
-# Tests
+# Testes
 Foram feitos  testes unitários e de integração para validar o sistema.
 
 Para rodar os testes, use:
